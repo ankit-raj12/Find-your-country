@@ -73,13 +73,6 @@ Endpoints used:
 * `/name/{country}?fullText=true`
 * `/alpha/{code}` (for each border)
 
-## 🚧 Potential Improvements
-* Add pagination or infinite scroll for performance on low-end devices.
-* Introduce caching for border lookups.
-* Add TypeScript for stronger type safety.
-* Implement skeletons for detail view (list already has shimmer component).
-* Improve accessibility (ARIA labels, color contrast audit).
-* Add tests (unit + integration with React Testing Library).
 
 ## 📄 License
 Personal / educational use. Add a formal license if distributing.
