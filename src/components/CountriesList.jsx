@@ -20,7 +20,9 @@ export default function CountriesList({ query }) {
     { !countryData.length ? <CountriesListShimmer /> :
       <div className="countries">
       {countryData
-        .filter((country) => (country.name.common.toLowerCase().includes(query) || country.region.toLowerCase().includes(query)))
+        .filter((country) =>{
+          const q = (query || '').trim().toLowerCase();
+          return (country.name.common.toLowerCase().trim().includes(q) || country.region.toLowerCase().trim().includes(q))})
         .map((country) => {
           return (
             <CountryCard
