@@ -73,7 +73,6 @@ nav button{
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     background-color: var(--element-color);
-    /* border: 1px solid black; */
 }
 
 .search-filter .search input{

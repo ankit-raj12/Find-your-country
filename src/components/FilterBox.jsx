@@ -1,6 +1,5 @@
 export default function FilterBox({setQuery}) {
   
-
   return (
     <select className="filter" onChange={(e) => setQuery(e.target.value.toLowerCase())}>
       <option hidden>Filter by region</option>

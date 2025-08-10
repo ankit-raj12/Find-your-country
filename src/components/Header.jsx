@@ -10,17 +10,21 @@ export default function Header() {
     const main = document.querySelector('main');
     const container = document.querySelector('.container');
     const svg = document.querySelector('nav button svg');
+    const searchSVG = document.querySelector('.search .searchIcon svg')
     
+    console.log(searchSVG)
     if (isDark) {
       nav?.classList.add('dark');
       main?.classList.add('dark');
       container?.classList.add('dark');
       if (svg) svg.style.fill = 'white';
+      if (searchSVG) searchSVG.style.fill = 'white';
     } else {
       nav?.classList.remove('dark');
       main?.classList.remove('dark');
       container?.classList.remove('dark');
       if (svg) svg.style.fill = 'black';
+      if (searchSVG) searchSVG.style.fill = 'black';
     }
   }, [isDark]); 
 
